@@ -15,6 +15,20 @@ const SearchField = () => {
   const navigation = useNavigate();
   const { updateData, cleanData } = useData();
 
+  // Redirect to Home page and getData of the search value
+
+  useEffect(() => {
+    if (searchValue) {
+      const timer = setTimeout(() => {
+        navigateToHome();
+        getData(searchValue);
+      }, 1200);
+      return () => clearTimeout(timer);
+    } else {
+      cleanData();
+    }
+  }, [searchValue]);
+
   // api call to get all characters then filter it with the user search value and dispatch it into data
 
   const getData = (searchValue) => {

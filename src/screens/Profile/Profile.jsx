@@ -1,12 +1,14 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
 
-import { List, ListItem, Size, Icon } from "@lumx/react";
+import { Divider, List, ListItem, Size, Icon } from "@lumx/react";
 import { mdiRuler, mdiWrench, mdiAutoFix, mdiArrowLeft } from "@lumx/icons";
 
 import useData from "../../store/DataContext";
 
 import housesData from "../../utils/housesData";
+
+import { Quizz } from "../../components/Quizz/Quizz";
 
 export const Profile = () => {
   const { data } = useData();
@@ -132,6 +134,8 @@ export const Profile = () => {
             </cite>
           </figcaption>
         </figure>
+        <Divider className="lumx-spacing-margin-vertical-big" />
+        <Quizz />
       </section>
       <aside>
         <div className="details-image-container">

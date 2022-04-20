@@ -1,0 +1,30 @@
+.quizz-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.quizz-answer-container {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: lumx-color-variant('dark-N','N');
+}
+
+.quizz-answer-button {
+ margin: 10px;
+}
+
+.result-text {
+ font-size: 1.3rem;
+}

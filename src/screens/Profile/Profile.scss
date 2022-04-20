@@ -1,0 +1,104 @@
+.Profile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin: 20px auto;
+  justify-content: space-around;
+
+  section {
+    height: 100vh;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content:space-between;
+  }
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  aside {
+    margin-left: 10px;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li > ul {
+    list-style-type: circle;
+    margin-left: 50px;
+  }
+
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: lumx-color-variant('dark-N','N');
+  font-weight: bold;
+
+  .arrow-back {
+    margin-right: 10px;
+  }
+
+  &hover {
+    color: lumx-color-variant('primary', 'N');
+  }
+}
+
+.profile-description {
+  p {
+  margin: 10px;
+  font-size: 1.2rem;
+ }
+}
+
+.profile-history {
+  margin-top: 30px;
+
+  p {
+    margin: 10px;
+  }
+
+  a {
+    color: lumx-color-variant('primary', 'N');
+    text-decoration: none;
+   }
+}
+
+.details-image-content {
+  width: 100px;
+}
+
+.details-info-container {
+  border: 2px solid lumx-color-variant('dark-N','N');
+  padding: 10px;
+  width: 90%;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.details-info-house-image {
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.detail-info-category {
+  font-weight: bold;
+}

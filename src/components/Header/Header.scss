@@ -1,0 +1,18 @@
+.header {
+  background-color: lumx-color-variant('primary', 'N');
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 1px lumx-color-variant('dark-N','N');
+}
+
+.header-logo-container {
+  width: 200px;
+  padding: auto;
+}
+
+.header-logo {
+  width: 100%;
+}

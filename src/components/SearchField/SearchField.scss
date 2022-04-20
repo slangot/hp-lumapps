@@ -1,0 +1,46 @@
+.search-field {
+  background-color: lumx-color-variant('light','N');
+  color: lumx-color-variant('dark-N','N');
+  width: 400px;
+  border-radius: 20px;
+  transition: 0.2s linear;
+}
+
+.empty-data-button {
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s linear;
+  background-color: transparent;
+  &hover {
+    color: lumx-color-variant('light','N');
+    transform: scale(1.1);
+    background-color: lumx-color-variant('primary', 'N');
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .empty-data-button {
+    display: none;
+  }
+
+  .empty-data-button-active {
+    display: block;
+  }
+
+  .search-field {
+    width: 45px;
+    &hover {
+      width: 200px;
+    }
+  }
+
+  .active-search {
+    width: 200px;
+  }
+}

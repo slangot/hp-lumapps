@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import SearchField from "../SearchField/SearchField";
+
 import Logo from "../../assets/images/hp-logo-long.png";
 
 const Header = () => {
@@ -15,6 +17,7 @@ const Header = () => {
           />
         </NavLink>
       </div>
+      <SearchField />
     </header>
   );
 };

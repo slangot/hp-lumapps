@@ -1,0 +1,43 @@
+.Card {
+  display: flex;
+  border: 2px solid lumx-color-variant('dark-N','N');
+  width: 80vw;
+  margin: 20px auto;
+  padding: 10px 20px;
+  transition: 0.2s linear;
+  &hover {
+    box-shadow: 0px 0px 15px lumx-color-variant('dark-N','N');
+  }
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+
+.card-info-container {
+  display: flex;
+  flex: 1;
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: lumx-color-variant('dark-N','N');
+  }
+}
+
+.link-button {
+  max-width: 110px;
+}
+
+.card-button {
+  box-shadow: 0px 0px 20px lumx-color-variant('dark-N','N');
+}

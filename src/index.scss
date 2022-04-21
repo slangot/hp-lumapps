@@ -1,3 +1,5 @@
+@import '~@lumx/core/scss/lumx.scss';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import './App/App.scss';
+@import './components/Header/Header.scss';
+@import './components/SearchField/SearchField.scss';
+@import './screens/Search/Search.scss';
+@import './components/Card/Card.scss';
+@import './screens/Profile/Profile.scss';
+@import './components/Quizz/Quizz.scss';

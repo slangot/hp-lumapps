@@ -1,0 +1,60 @@
+.welcome-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.welcome-image {
+  width: 400px;
+  margin: 0 auto;
+  img {
+    margin-top: 20px;
+  object-fit: contain;
+  width: 100%;
+  }
+}
+
+.characters-pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.pagination-btns {
+  width: 50%;
+  height: 5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto 2rem auto;
+  border-radius:20px;
+  box-sizing: border-box;
+  a {
+    font-size:18px;
+    padding:1rem 1rem;
+    margin: 10px;
+    border-radius: 15px;
+    color: lumx-color-variant('dark-N','N');
+    cursor: pointer;
+  }
+}
+
+.pagination-active a {
+  border: 1px solid lumx-color-variant('primary', 'N')
+}
+
+.pagination-disabled a { 
+  cursor: not-allowed;
+  &hover {
+    background-color: lumx-color-variant('light','N');
+    cursor: not-allowed;
+  }
+}
+
+.arrow-left, .arrow-right{
+  background-color: transparent;
+  font-size: 45px;
+}

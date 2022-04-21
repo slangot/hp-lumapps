@@ -77,7 +77,7 @@ const SearchField = () => {
         onChange={(e) => handleSearchValue(e)}
         className={activeSearch ? "search-field active-search" : "search-field"}
         onFocus={() => setActiveSearch(true)}
-        value={searchValue}
+        value={searchValue ? searchValue : ""}
         onKeyPress={(e) => handleKeyPress(e)}
       />
 
